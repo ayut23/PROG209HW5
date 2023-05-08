@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3 pages Homework</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Welcome to my jQuery 3 Page App</h1>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#input">Input Data</a></li>
+				<li><a href="#display">Display Data</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="home" data-role="page">
+			<div data-role="header"><h2>Homepage</h2></div>
+			<div data-role="content">
+				<p>Welcome to my jQuery 3 Page App. Please navigate to the input or display data sections using the links above.</p>
+			</div>
+		</section>
+		<section id="input" data-role="page">
+			<div data-role="header"><h2>Input Data</h2></div>
+			<div data-role="content">
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name"><br>
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email"><br>
+
+					<label for="message">Message:</label>
+					<textarea id="message" name="message"></textarea><br>
+
+					<input type="button" id="submit" value="Submit">
+				</form>
+			</div>
+		</section>
+		<section id="display" data-role="page">
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#input">Input Data</a></li>
+					<li><a href="#display">Display Data</a></li>
+				</ul>
+			</nav>
+			<div data-role="header"><h2>Display Data</h2></div>
+			<div data-role="content">
+				<ul id="messages"></ul>
+			</div>
+		</section>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
